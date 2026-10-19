@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <div class="brand">KPR <span>STUDENT PORTAL</span></div>
+      <h1>Student Registration</h1>
+      <p class="muted">Create a student account using the form below.</p>
+      <form id="registrationForm" novalidate>
+        <div class="grid">
+          <label>Full name
+            <input id="name" name="name" type="text" placeholder="Enter full name" required>
+            <small class="error" id="nameError"></small>
+          </label>
+          <label>Roll number
+            <input id="roll" name="roll" type="text" placeholder="e.g. 23CS101" required>
+            <small class="error" id="rollError"></small>
+          </label>
+          <label>Email address
+            <input id="email" name="email" type="email" placeholder="name@example.com" required>
+            <small class="error" id="emailError"></small>
+          </label>
+          <label>Course
+            <select id="course" name="course" required>
+              <option value="">Select course</option>
+              <option>Computer Science and Engineering</option>
+              <option>Information Technology</option>
+              <option>Mechanical Engineering</option>
+              <option>Electronics and Communication Engineering</option>
+            </select>
+            <small class="error" id="courseError"></small>
+          </label>
+          <label>Password
+            <input id="password" name="password" type="password" placeholder="Minimum 8 characters" required>
+            <small class="hint">Use uppercase, lowercase, a number and a symbol.</small>
+            <small class="error" id="passwordError"></small>
+          </label>
+          <label>Profile image / document
+            <input id="file" name="file" type="file" accept=".jpg,.jpeg,.png,.pdf">
+            <small class="hint">JPG, PNG or PDF · Maximum 2 MB</small>
+            <small class="error" id="fileError"></small>
+          </label>
+        </div>
+        <button type="submit">Register Student</button>
+        <p id="result" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

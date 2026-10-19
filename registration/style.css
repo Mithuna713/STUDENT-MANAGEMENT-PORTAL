@@ -1,0 +1,11 @@
+:root{font-family:Arial,Helvetica,sans-serif;color:#18243a;background:#eef3f9}
+*{box-sizing:border-box}body{margin:0}.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+.card{background:#fff;width:min(850px,100%);padding:34px;border-radius:18px;box-shadow:0 16px 45px #19345b18}
+.brand{font-weight:800;letter-spacing:2px;color:#1c5fc4}.brand span{font-size:11px;letter-spacing:1px;color:#66748a;margin-left:8px}
+h1{margin:20px 0 6px;font-size:30px}.muted,.hint{color:#68758a}.muted{margin-top:0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:25px}
+label{display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:700}
+input,select{width:100%;padding:12px 13px;border:1px solid #cbd5e1;border-radius:8px;font:inherit;font-weight:400;background:#fff}
+input:focus,select:focus{outline:3px solid #dbeafe;border-color:#2563eb}.hint{font-size:12px;font-weight:400}.error{color:#c62828;font-size:12px;font-weight:400;min-height:14px}
+button{margin-top:24px;background:#1d5fc4;color:#fff;border:0;border-radius:9px;padding:13px 20px;font-size:15px;font-weight:700;cursor:pointer}
+button:hover{background:#154b9d}#result{font-weight:700;color:#187346}
+@media(max-width:620px){.card{padding:22px}.grid{grid-template-columns:1fr}h1{font-size:25px}}
